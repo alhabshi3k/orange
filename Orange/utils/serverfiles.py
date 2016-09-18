@@ -396,7 +396,7 @@ class ServerFiles(object):
                         import poster.streaminghttp as psh
                         import poster.encode
                     except ImportError:
-                        raise ImportError("You need to install 'poster' (http://pypi.python.org/pypi/poster) to be able to upload files.")
+                        raise ImportError("You need to install 'poster' (https://pypi.python.org/pypi/poster) to be able to upload files.")
                 
                     handlers = [psh.StreamingHTTPHandler, psh.StreamingHTTPRedirectHandler, psh.StreamingHTTPSHandler]
                     opener = urllib2.build_opener(*handlers)
